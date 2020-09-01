@@ -38,4 +38,16 @@ describe('index.js', ()=>{
         const result = index.isFizzBuzz(45);
         assert.equal(result,'FizzBuzz');
     })
+    it('Test if random number returns nothing', ()=>{
+        const result = index.isFizzBuzz(1);
+        assert.equal(result,'Its not Fizz nor Buzz');
+    })
+    it('Test if random number returns nothing part 2', ()=>{
+        const result = index.isFizzBuzz(0);
+        assert.equal(result,'Its not Fizz nor Buzz');
+    })
+    it('Test if random number returns nothing part 3', ()=>{
+        const result = index.isFizzBuzz(49);
+        assert.equal(result,'Its not Fizz nor Buzz');
+    })
 });
