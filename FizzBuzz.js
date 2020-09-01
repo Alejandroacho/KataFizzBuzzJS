@@ -29,5 +29,6 @@ module.exports = {
         }     
 
         return 'Its not Fizz nor Buzz'
+        
     }
 }

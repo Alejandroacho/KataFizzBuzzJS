@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const index = require('../index.js');
+const index = require('../FizzBuzz.js');
 
 describe('Test de isFizzBuzz :D', function(){
 
