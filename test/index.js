@@ -59,9 +59,10 @@ describe('index.js', ()=>{
         assert.equal(result,'Its not Fizz nor Buzz');
     })
 
+
     //*********************************NEGATIVE********************************** */
     it('Test if negativ number returns advertisement', ()=>{
-        const result = index.isFizzBuzz(-1);
-        assert.equal(result,'Only positive numbers please');
+        const result = index.isFizzBuzz(-15);
+        assert.equal(result,'FizzBuzz');
     })
 });

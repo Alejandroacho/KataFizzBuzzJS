@@ -16,10 +16,7 @@ module.exports = {
             return 'FizzBuzz';
         } 
 
-        if (number<0)
-        {
-            return 'Only positive numbers please';
-        }
+
         return 'Its not Fizz nor Buzz'
     }
 }
