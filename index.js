@@ -1,6 +1,11 @@
 module.exports = {
     isFizzBuzz(number){
 
+        if (typeof number != 'number')
+        {
+            return 'Only numbers please';
+        }
+
         if (number%3==0 && number%5!=0 && number!=0)
         {
             return 'Fizz';
@@ -15,7 +20,6 @@ module.exports = {
         {
             return 'FizzBuzz';
         } 
-
 
         return 'Its not Fizz nor Buzz'
     }

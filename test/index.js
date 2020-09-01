@@ -61,8 +61,28 @@ describe('index.js', ()=>{
 
 
     //*********************************NEGATIVE********************************** */
-    it('Test if negativ number returns advertisement', ()=>{
+    it('Test if negative number returns FizzBuzz', ()=>{
         const result = index.isFizzBuzz(-15);
         assert.equal(result,'FizzBuzz');
+    })
+    it('Test if negative number returns Fizz', ()=>{
+        const result = index.isFizzBuzz(-3);
+        assert.equal(result,'Fizz');
+    })
+    it('Test if negative number returns Buzz', ()=>{
+        const result = index.isFizzBuzz(-5);
+        assert.equal(result,'Buzz');
+    })
+
+    
+    //*********************************Letters********************************** */
+    it('Test if letter returns advertisement', ()=>{
+        const result = index.isFizzBuzz('a');
+        assert.equal(result,'Only numbers please');
+    })
+
+    it('Test if letter returns advertisement', ()=>{
+        const result = index.isFizzBuzz('p');
+        assert.equal(result,'Only numbers please');
     })
 });
