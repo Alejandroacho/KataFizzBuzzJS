@@ -90,4 +90,19 @@ describe('index.js', ()=>{
         const result = index.isFizzBuzz('3');
         assert.equal(result,'Fizz');
     })
+
+    it('Test if letter returns Buzz', ()=>{
+        const result = index.isFizzBuzz('5');
+        assert.equal(result,'Buzz');
+    })
+
+    it('Test if letter returns FizzBuzz', ()=>{
+        const result = index.isFizzBuzz('15');
+        assert.equal(result,'FizzBuzz');
+    })
+
+    it('Test if letter returns its not a FizzBuzz', ()=>{
+        const result = index.isFizzBuzz('17');
+        assert.equal(result,'Its not Fizz nor Buzz');
+    })
 });

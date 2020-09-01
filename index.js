@@ -10,17 +10,20 @@ module.exports = {
             }
         }
 
-        if (number%3==0 && number%5!=0 && number!=0)
+        var FizzCondition = number%3;
+        var BuzzCondition = number%5;
+
+        if (FizzCondition==0 && BuzzCondition!=0 && number!=0)
         {
             return 'Fizz';
         }
 
-        if (number%5==0 && number%3!=0 && number!=0)
+        if (BuzzCondition==0 && FizzCondition!=0 && number!=0)
         {
             return 'Buzz';
         }     
 
-        if (number%5==0 && number%3==0 && number!=0)
+        if (BuzzCondition==0 && FizzCondition==0 && number!=0)
         {
             return 'FizzBuzz';
         } 
