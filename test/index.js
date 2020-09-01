@@ -81,8 +81,13 @@ describe('index.js', ()=>{
         assert.equal(result,'Only numbers please');
     })
 
-    it('Test if letter returns advertisement', ()=>{
-        const result = index.isFizzBuzz('p');
+    it('Test if letter returns advertisement part 2', ()=>{
+        const result = index.isFizzBuzz('c');
         assert.equal(result,'Only numbers please');
+    })
+
+    it('Test if letter returns Fizz', ()=>{
+        const result = index.isFizzBuzz('3');
+        assert.equal(result,'Fizz');
     })
 });

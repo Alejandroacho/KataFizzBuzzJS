@@ -3,7 +3,11 @@ module.exports = {
 
         if (typeof number != 'number')
         {
-            return 'Only numbers please';
+            number = parseInt(number);
+            if (isNaN(number))
+            {
+                return 'Only numbers please';
+            }
         }
 
         if (number%3==0 && number%5!=0 && number!=0)
